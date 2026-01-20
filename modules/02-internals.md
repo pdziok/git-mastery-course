@@ -16,9 +16,9 @@ Think of Git as a special library with an unusual cataloging system:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                         THE GIT LIBRARY                              │
+│                         THE GIT LIBRARY                             │
 ├─────────────────────────────────────────────────────────────────────┤
-│                                                                       │
+│                                                                     │
 │  STORAGE ROOM (objects/)          │  CARD CATALOG (refs/)            │
 │  ─────────────────────────        │  ─────────────────────           │
 │                                    │                                  │
@@ -331,7 +331,7 @@ git cat-file -p HEAD^{tree}
                            │
                            ▼
 ┌────────────────────────────────────────────────────────┐
-│                    COMMIT abc123                        │
+│                    COMMIT abc123                       │
 │  tree: def456                                          │
 │  parent: (none - first commit)                         │
 │  author: John Doe                                      │

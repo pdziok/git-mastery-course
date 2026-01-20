@@ -336,25 +336,25 @@ This helps when:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    CHERRY-PICK COMMANDS                          │
+│                    CHERRY-PICK COMMANDS                         │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  BASIC                                                           │
+│                                                                 │
+│  BASIC                                                          │
 │  git cherry-pick <commit>      Apply commit to current branch   │
 │  git cherry-pick A B C         Apply multiple commits           │
 │  git cherry-pick A..B          Apply range (A exclusive)        │
 │  git cherry-pick A^..B         Apply range (A inclusive)        │
-│                                                                   │
-│  OPTIONS                                                         │
+│                                                                 │
+│  OPTIONS                                                        │
 │  git cherry-pick -n <commit>   Don't commit, just stage         │
 │  git cherry-pick -e <commit>   Edit commit message              │
 │  git cherry-pick -x <commit>   Add "cherry picked from" note    │
-│                                                                   │
-│  CONFLICT HANDLING                                               │
+│                                                                 │
+│  CONFLICT HANDLING                                              │
 │  git cherry-pick --continue    After resolving conflicts        │
 │  git cherry-pick --abort       Cancel the cherry-pick           │
 │  git cherry-pick --skip        Skip current commit              │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

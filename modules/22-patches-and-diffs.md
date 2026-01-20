@@ -18,16 +18,16 @@ Before Git, developers shared code changes like sharing recipes:
 ```
 EMAIL/LETTER:
 ┌─────────────────────────────────────────────────────────────────┐
-│  Dear colleague,                                                 │
-│                                                                   │
+│  Dear colleague,                                                │
+│                                                                 │
 │  I fixed the bug in authentication. Here's what to change:      │
-│                                                                   │
-│  In file auth.js, line 42:                                       │
+│                                                                 │
+│  In file auth.js, line 42:                                      │
 │  - Remove: "if (password == hash)"                              │
 │  + Add:    "if (await bcrypt.compare(password, hash))"          │
-│                                                                   │
-│  Best regards,                                                   │
-│  Alice                                                           │
+│                                                                 │
+│  Best regards,                                                  │
+│  Alice                                                          │
 └─────────────────────────────────────────────────────────────────┘
 
 This is essentially what a PATCH is!
@@ -520,30 +520,30 @@ git am email_patch.txt
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    PATCH COMMANDS                                │
+│                    PATCH COMMANDS                               │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  CREATING PATCHES                                                │
+│                                                                 │
+│  CREATING PATCHES                                               │
 │  git diff > file.patch              Uncommitted changes         │
 │  git diff --staged > file.patch     Staged changes              │
 │  git format-patch -1                Last commit                 │
 │  git format-patch -3                Last 3 commits              │
 │  git format-patch main..feature     Branch diff                 │
 │  diff -ruN old/ new/ > file.patch   Without Git                 │
-│                                                                   │
-│  APPLYING PATCHES                                                │
+│                                                                 │
+│  APPLYING PATCHES                                               │
 │  git apply file.patch               Apply changes only          │
 │  git apply --check file.patch       Test first                  │
 │  git apply -R file.patch            Reverse (undo)              │
 │  git am file.patch                  Apply as commit             │
 │  git am *.patch                     Apply multiple              │
 │  patch -p1 < file.patch             Without Git                 │
-│                                                                   │
-│  TROUBLESHOOTING                                                 │
+│                                                                 │
+│  TROUBLESHOOTING                                                │
 │  git apply -3 file.patch            3-way merge on conflict     │
 │  git am --abort                     Cancel am in progress       │
 │  patch --dry-run < file.patch       Test without Git            │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

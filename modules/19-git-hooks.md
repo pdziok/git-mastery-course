@@ -17,22 +17,22 @@ Git hooks are like security guards at different checkpoints:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                      YOUR GIT WORKFLOW                           │
+│                      YOUR GIT WORKFLOW                          │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
+│                                                                 │
 │   [EDIT]      [COMMIT]       [PUSH]        [RECEIVE]            │
-│      │            │             │              │                 │
-│      ▼            ▼             ▼              ▼                 │
+│      │            │             │              │                │
+│      ▼            ▼             ▼              ▼                │
 │  ┌───────┐   ┌─────────┐   ┌─────────┐   ┌───────────┐          │
 │  │Guard 1│   │ Guard 2 │   │ Guard 3 │   │  Guard 4  │          │
 │  │pre-   │   │pre-     │   │pre-push │   │pre-receive│          │
 │  │commit │   │commit-  │   │         │   │(server)   │          │
 │  │       │   │msg      │   │         │   │           │          │
 │  └───────┘   └─────────┘   └─────────┘   └───────────┘          │
-│      │            │             │              │                 │
+│      │            │             │              │                │
 │  "Is code    "Is message   "Are tests    "Does this             │
 │   formatted?" valid?"       passing?"    meet policy?"          │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 
 If any guard rejects → operation is blocked!
@@ -538,33 +538,33 @@ fi
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    GIT HOOKS                                     │
+│                    GIT HOOKS                                    │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  COMMON HOOKS                                                    │
+│                                                                 │
+│  COMMON HOOKS                                                   │
 │  pre-commit      Before commit prompt (lint, format)            │
 │  commit-msg      Validate commit message                        │
 │  pre-push        Before push (run tests)                        │
 │  post-checkout   After checkout (install deps)                  │
 │  post-merge      After merge (install deps)                     │
-│                                                                   │
-│  LOCATIONS                                                       │
+│                                                                 │
+│  LOCATIONS                                                      │
 │  .git/hooks/     Default (not tracked)                          │
 │  .githooks/      Custom tracked directory                       │
 │  .husky/         Husky hooks (JS projects)                      │
-│                                                                   │
-│  CONFIGURATION                                                   │
+│                                                                 │
+│  CONFIGURATION                                                  │
 │  git config core.hooksPath .githooks                            │
-│                                                                   │
-│  BYPASS                                                          │
+│                                                                 │
+│  BYPASS                                                         │
 │  git commit --no-verify                                         │
 │  git push --no-verify                                           │
-│                                                                   │
-│  TOOLS                                                           │
+│                                                                 │
+│  TOOLS                                                          │
 │  JS/TS:   husky + lint-staged                                   │
 │  JVM:     gradle-git-hooks or custom Gradle task                │
 │  Python:  pre-commit (pip install pre-commit)                   │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

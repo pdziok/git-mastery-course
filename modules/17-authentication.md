@@ -18,18 +18,18 @@ After this module, you will:
 HTTPS:
 ┌─────────────────────────────────────────────────────────────────┐
 │ git clone https://github.com/user/repo.git                      │
-│                                                                   │
+│                                                                 │
 │ Authentication: Username + Password/Token                       │
-│ Port: 443 (standard HTTPS)                                       │
+│ Port: 443 (standard HTTPS)                                      │
 │ Firewall: Usually allowed (web traffic)                         │
 └─────────────────────────────────────────────────────────────────┘
 
 SSH:
 ┌─────────────────────────────────────────────────────────────────┐
 │ git clone git@github.com:user/repo.git                          │
-│                                                                   │
+│                                                                 │
 │ Authentication: SSH Key (public/private key pair)               │
-│ Port: 22 (SSH - may be blocked by some firewalls)              │
+│ Port: 22 (SSH - may be blocked by some firewalls)               │
 │ Firewall: Sometimes blocked on corporate networks               │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -500,28 +500,28 @@ git remote -v
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    AUTHENTICATION                                │
+│                    AUTHENTICATION                               │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  SSH SETUP                                                       │
+│                                                                 │
+│  SSH SETUP                                                      │
 │  ssh-keygen -t ed25519 -C "email"      Generate key             │
 │  ssh-add ~/.ssh/id_ed25519             Add to agent             │
 │  ssh -T git@github.com                 Test connection          │
-│                                                                   │
-│  CREDENTIAL HELPERS                                              │
+│                                                                 │
+│  CREDENTIAL HELPERS                                             │
 │  osxkeychain    macOS (recommended)                             │
 │  manager-core   Windows (recommended)                           │
 │  libsecret      Linux GNOME                                     │
 │  cache          Temporary memory                                │
 │  store          Plain text (avoid!)                             │
-│                                                                   │
-│  MULTIPLE ACCOUNTS                                               │
+│                                                                 │
+│  MULTIPLE ACCOUNTS                                              │
 │  ~/.ssh/config     Map hosts to keys                            │
 │  includeIf         Conditional gitconfig                        │
-│                                                                   │
-│  SWITCH HTTPS TO SSH                                             │
-│  git remote set-url origin git@github.com:user/repo.git        │
-│                                                                   │
+│                                                                 │
+│  SWITCH HTTPS TO SSH                                            │
+│  git remote set-url origin git@github.com:user/repo.git         │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

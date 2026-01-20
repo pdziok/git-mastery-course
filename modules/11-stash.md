@@ -16,23 +16,23 @@ Imagine you're working at a desk with papers everywhere. Your boss walks in and 
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                          YOUR DESK                               │
+│                          YOUR DESK                              │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
+│                                                                 │
 │   Papers everywhere!          git stash          Clean desk!    │
 │   ┌────┐ ┌────┐ ┌────┐       ─────────>         ┌──────────┐    │
 │   │    │ │    │ │    │                          │          │    │
 │   └────┘ └────┘ └────┘                          │ (empty)  │    │
-│                                                  └──────────┘    │
-│          ║                                                       │
-│          ║                   git stash pop                       │
-│          ▼                   <───────────                        │
+│                                                  └──────────┘   │
+│          ║                                                      │
+│          ║                   git stash pop                      │
+│          ▼                   <───────────                       │
 │   ┌─────────────┐                                               │
 │   │ MAGIC       │  You can have multiple drawers!               │
 │   │ DRAWER      │  stash@{0}, stash@{1}, stash@{2}...          │
 │   │ (invisible) │                                               │
 │   └─────────────┘                                               │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -366,32 +366,32 @@ git stash
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    STASH COMMANDS                                │
+│                    STASH COMMANDS                               │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  BASIC                                                           │
+│                                                                 │
+│  BASIC                                                          │
 │  git stash                     Quick stash                      │
 │  git stash push -m "msg"       Stash with description           │
 │  git stash pop                 Apply & remove latest stash      │
 │  git stash apply               Apply but keep stash             │
-│                                                                   │
-│  OPTIONS                                                         │
+│                                                                 │
+│  OPTIONS                                                        │
 │  git stash -u                  Include untracked files          │
 │  git stash -a                  Include everything (ignored too) │
 │  git stash --keep-index        Keep staged changes              │
-│  git stash push file1 file2    Stash specific files            │
-│                                                                   │
-│  MANAGEMENT                                                      │
-│  git stash list                List all stashes                  │
+│  git stash push file1 file2    Stash specific files             │
+│                                                                 │
+│  MANAGEMENT                                                     │
+│  git stash list                List all stashes                 │
 │  git stash show                Summary of latest stash          │
 │  git stash show -p             Full diff of stash               │
-│  git stash drop stash@{N}      Delete specific stash           │
-│  git stash clear               Delete ALL stashes              │
-│                                                                   │
-│  ADVANCED                                                        │
-│  git stash pop stash@{N}       Apply specific stash            │
-│  git stash branch <name>       Create branch from stash        │
-│                                                                   │
+│  git stash drop stash@{N}      Delete specific stash            │
+│  git stash clear               Delete ALL stashes               │
+│                                                                 │
+│  ADVANCED                                                       │
+│  git stash pop stash@{N}       Apply specific stash             │
+│  git stash branch <name>       Create branch from stash         │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

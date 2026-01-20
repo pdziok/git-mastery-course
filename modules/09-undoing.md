@@ -30,21 +30,21 @@ Understanding reset requires remembering the three areas:
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│                                                                    │
-│    Working Directory        Staging Area         Repository       │
-│    (what you see)           (index)              (commits)        │
-│                                                                    │
-│    ┌─────────────┐         ┌─────────────┐      ┌─────────────┐   │
-│    │  file.txt   │         │  file.txt   │      │  Commit A   │   │
-│    │  (edited)   │         │  (staged)   │      │  file.txt   │   │
-│    └─────────────┘         └─────────────┘      └─────────────┘   │
-│                                                                    │
-│    ─────────────────────────────────────────────────────────────  │
-│                                                                    │
-│    reset --soft HEAD~1                               ← moves only │
-│    reset --mixed HEAD~1                   ← ──────── ← resets     │
-│    reset --hard HEAD~1   ← ────────────── ← ──────── ← resets ALL │
-│                                                                    │
+│                                                                  │
+│    Working Directory        Staging Area         Repository      │
+│    (what you see)           (index)              (commits)       │
+│                                                                  │
+│    ┌─────────────┐         ┌─────────────┐      ┌─────────────┐  │
+│    │  file.txt   │         │  file.txt   │      │  Commit A   │  │
+│    │  (edited)   │         │  (staged)   │      │  file.txt   │  │
+│    └─────────────┘         └─────────────┘      └─────────────┘  │
+│                                                                  │
+│    ───────────────────────────────────────────────────────────── │
+│                                                                  │
+│    reset --soft HEAD~1                               ← moves only│
+│    reset --mixed HEAD~1                   ← ──────── ← resets    │
+│    reset --hard HEAD~1   ← ────────────── ← ──────── ← resets ALL│
+│                                                                  │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
@@ -370,31 +370,31 @@ cat important.txt
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    WHAT DO YOU WANT TO UNDO?                     │
+│                    WHAT DO YOU WANT TO UNDO?                    │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
+│                                                                 │
 │  "I want to discard changes to a file"                          │
-│  → git restore <file>                                            │
-│                                                                   │
-│  "I want to unstage a file"                                      │
-│  → git restore --staged <file>                                   │
-│                                                                   │
+│  → git restore <file>                                           │
+│                                                                 │
+│  "I want to unstage a file"                                     │
+│  → git restore --staged <file>                                  │
+│                                                                 │
 │  "I want to redo my last commit (change message or add files)"  │
-│  → git reset --soft HEAD~1  (then recommit)                      │
-│  OR: git commit --amend                                          │
-│                                                                   │
+│  → git reset --soft HEAD~1  (then recommit)                     │
+│  OR: git commit --amend                                         │
+│                                                                 │
 │  "I want to uncommit but keep changes for different commits"    │
-│  → git reset HEAD~1  (mixed, keeps changes unstaged)             │
-│                                                                   │
+│  → git reset HEAD~1  (mixed, keeps changes unstaged)            │
+│                                                                 │
 │  "I want to throw away my last commit completely"               │
 │  → git reset --hard HEAD~1  (DANGEROUS! Changes lost!)          │
-│                                                                   │
+│                                                                 │
 │  "I need to undo a commit that's been pushed/shared"            │
 │  → git revert <commit>  (safe, creates new commit)              │
-│                                                                   │
+│                                                                 │
 │  "I accidentally reset --hard and lost work!"                   │
-│  → git reflog  (find the commit, then reset --hard to it)        │
-│                                                                   │
+│  → git reflog  (find the commit, then reset --hard to it)       │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -435,31 +435,31 @@ cat important.txt
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    UNDO COMMANDS                                 │
+│                    UNDO COMMANDS                                │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  DISCARD / RESTORE                                               │
+│                                                                 │
+│  DISCARD / RESTORE                                              │
 │  git restore <file>            Discard working dir changes      │
 │  git restore --staged <file>   Unstage (keep changes)           │
 │  git restore --source X <file> Get file from commit X           │
-│                                                                   │
-│  RESET (move HEAD)                                               │
+│                                                                 │
+│  RESET (move HEAD)                                              │
 │  git reset --soft HEAD~1       Uncommit, keep staged            │
-│  git reset HEAD~1              Uncommit, keep unstaged           │
+│  git reset HEAD~1              Uncommit, keep unstaged          │
 │  git reset --hard HEAD~1       Uncommit, DISCARD all            │
-│                                                                   │
-│  REVERT (safe for shared)                                        │
+│                                                                 │
+│  REVERT (safe for shared)                                       │
 │  git revert <commit>           Create undo commit               │
 │  git revert -n <commit>        Revert without committing        │
-│                                                                   │
-│  RECOVERY                                                        │
-│  git reflog                    See HEAD history                  │
+│                                                                 │
+│  RECOVERY                                                       │
+│  git reflog                    See HEAD history                 │
 │  git reset --hard HEAD@{N}     Go back to Nth previous state    │
-│                                                                   │
-│  AMEND (fix last commit)                                         │
-│  git commit --amend            Edit last commit                  │
-│  git commit --amend --no-edit  Add staged to last commit         │
-│                                                                   │
+│                                                                 │
+│  AMEND (fix last commit)                                        │
+│  git commit --amend            Edit last commit                 │
+│  git commit --amend --no-edit  Add staged to last commit        │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

@@ -484,22 +484,22 @@ git log --oneline --graph --all
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    WORKFLOW SELECTION                            │
+│                    WORKFLOW SELECTION                           │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
+│                                                                 │
 │  GITHUB FLOW (default choice)                                   │
 │  main ──────────────────────────                                │
-│       \──feature──/                                              │
-│                                                                   │
+│       \──feature──/                                             │
+│                                                                 │
 │  GITFLOW (scheduled releases)                                   │
-│  main ────────────────────────                                   │
-│  develop ──────────────────                                      │
-│          \feature/ \release/                                     │
-│                                                                   │
+│  main ────────────────────────                                  │
+│  develop ──────────────────                                     │
+│          \feature/ \release/                                    │
+│                                                                 │
 │  TRUNK-BASED (mature teams)                                     │
 │  main ──●──●──●──●──●──                                         │
-│  (everyone commits to main)                                      │
-│                                                                   │
+│  (everyone commits to main)                                     │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

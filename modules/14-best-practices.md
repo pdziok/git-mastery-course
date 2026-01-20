@@ -135,26 +135,26 @@ git log --oneline
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    COMMIT MESSAGE RULES                          │
+│                    COMMIT MESSAGE RULES                         │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
+│                                                                 │
 │  1. Use imperative mood: "add" not "added" or "adds"            │
 │     ✓ "feat: add login button"                                  │
 │     ✗ "feat: added login button"                                │
-│                                                                   │
-│  2. Don't end with period                                        │
+│                                                                 │
+│  2. Don't end with period                                       │
 │     ✓ "fix: resolve null pointer"                               │
 │     ✗ "fix: resolve null pointer."                              │
-│                                                                   │
+│                                                                 │
 │  3. Keep subject under 50 characters                            │
 │     ✓ "feat(api): add user endpoint"                            │
 │     ✗ "feat(api): add new user endpoint with authentication..." │
-│                                                                   │
+│                                                                 │
 │  4. Separate subject from body with blank line                  │
-│                                                                   │
+│                                                                 │
 │  5. Use body to explain WHAT and WHY, not HOW                   │
-│     (code shows how)                                             │
-│                                                                   │
+│     (code shows how)                                            │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -275,30 +275,30 @@ git commit -m "PROJ-123 #comment This needs review"
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                 TICKET REFERENCE PATTERNS                        │
+│                 TICKET REFERENCE PATTERNS                       │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  BRANCHES                                                        │
+│                                                                 │
+│  BRANCHES                                                       │
 │  feat/PROJ-123-short-description    Jira style                  │
 │  fix/123-short-description          GitHub/GitLab style         │
 │  PROJ-123/feat/description          Ticket-first style          │
-│                                                                   │
+│                                                                 │
 │  COMMITS (choose one pattern for your team)                     │
-│                                                                   │
+│                                                                 │
 │  Pattern A: Footer reference (cleanest)                         │
 │  feat(auth): implement SSO login                                │
-│                                                                   │
+│                                                                 │
 │  Refs: PROJ-123                                                 │
-│                                                                   │
+│                                                                 │
 │  Pattern B: Scope contains ticket                               │
 │  feat(PROJ-123): implement SSO login                            │
-│                                                                   │
+│                                                                 │
 │  Pattern C: Subject suffix                                      │
 │  feat(auth): implement SSO login [PROJ-123]                     │
-│                                                                   │
+│                                                                 │
 │  Pattern D: Subject prefix (non-conventional)                   │
 │  PROJ-123 implement SSO login                                   │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -803,36 +803,36 @@ git rebase -i origin/main
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    GIT BEST PRACTICES                            │
+│                    GIT BEST PRACTICES                           │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  COMMITS                                                         │
+│                                                                 │
+│  COMMITS                                                        │
 │  ✓ Use conventional commit format                               │
-│  ✓ Reference tickets in footer or scope                        │
+│  ✓ Reference tickets in footer or scope                         │
 │  ✓ Write in imperative mood                                     │
 │  ✓ Keep subject under 50 chars                                  │
 │  ✓ Explain WHY in body                                          │
 │  ✓ One logical change per commit                                │
-│                                                                   │
-│  BRANCHES                                                        │
+│                                                                 │
+│  BRANCHES                                                       │
 │  ✓ Create from latest main                                      │
-│  ✓ Include ticket ID (feat/PROJ-123-description)               │
-│  ✓ Use descriptive names (feat/, fix/, etc.)                   │
+│  ✓ Include ticket ID (feat/PROJ-123-description)                │
+│  ✓ Use descriptive names (feat/, fix/, etc.)                    │
 │  ✓ Keep branches short-lived                                    │
 │  ✓ Delete after merge                                           │
-│                                                                   │
-│  WORKFLOW                                                        │
+│                                                                 │
+│  WORKFLOW                                                       │
 │  ✓ Pull --rebase to stay current                                │
 │  ✓ Clean up before PR (interactive rebase)                      │
 │  ✓ Review your own diff before PR                               │
 │  ✓ Never force push to shared branches                          │
-│                                                                   │
-│  HYGIENE                                                         │
+│                                                                 │
+│  HYGIENE                                                        │
 │  ✓ Use .gitignore properly                                      │
 │  ✓ Never commit secrets                                         │
 │  ✓ Test before committing                                       │
 │  ✓ Keep commits atomic (one concern each)                       │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

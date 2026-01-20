@@ -249,10 +249,10 @@ Signed commits show a "Verified" badge:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  commit abc123                                                   │
+│  commit abc123                                                  │
 │  Author: Your Name <you@email.com>                              │
-│                                                     [Verified ✓] │
-│  feat: add authentication                                        │
+│                                                     [Verified ✓]│
+│  feat: add authentication                                       │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -395,34 +395,34 @@ git log --show-signature
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    COMMIT SIGNING                                │
+│                    COMMIT SIGNING                               │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  GPG SETUP                                                       │
-│  gpg --full-generate-key                 Generate key            │
+│                                                                 │
+│  GPG SETUP                                                      │
+│  gpg --full-generate-key                 Generate key           │
 │  gpg --list-secret-keys --keyid-format=long  List keys          │
-│  gpg --armor --export KEY_ID             Export for GitHub       │
-│  git config --global user.signingkey KEY_ID  Set signing key   │
-│  git config --global commit.gpgsign true     Auto-sign         │
-│                                                                   │
-│  SSH SETUP (Git 2.34+)                                           │
+│  gpg --armor --export KEY_ID             Export for GitHub      │
+│  git config --global user.signingkey KEY_ID  Set signing key    │
+│  git config --global commit.gpgsign true     Auto-sign          │
+│                                                                 │
+│  SSH SETUP (Git 2.34+)                                          │
 │  git config --global gpg.format ssh                             │
-│  git config --global user.signingkey ~/.ssh/id_ed25519         │
+│  git config --global user.signingkey ~/.ssh/id_ed25519          │
 │  git config --global commit.gpgsign true                        │
-│                                                                   │
-│  SIGNING                                                         │
+│                                                                 │
+│  SIGNING                                                        │
 │  git commit -S -m "message"    Sign single commit               │
-│  git tag -s v1.0.0 -m "msg"    Signed tag                      │
-│                                                                   │
-│  VERIFICATION                                                    │
+│  git tag -s v1.0.0 -m "msg"    Signed tag                       │
+│                                                                 │
+│  VERIFICATION                                                   │
 │  git log --show-signature      Show signatures                  │
 │  git verify-commit <hash>      Verify specific commit           │
 │  git tag -v <tag>              Verify tag                       │
-│                                                                   │
-│  TROUBLESHOOTING                                                 │
+│                                                                 │
+│  TROUBLESHOOTING                                                │
 │  export GPG_TTY=$(tty)         Fix TTY issues                   │
 │  gpgconf --kill gpg-agent      Restart GPG agent                │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

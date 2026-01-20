@@ -510,34 +510,34 @@ git diff --name-only main..feature
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    ADVANCED TECHNIQUES                           │
+│                    ADVANCED TECHNIQUES                          │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  INTERACTIVE STAGING                                             │
+│                                                                 │
+│  INTERACTIVE STAGING                                            │
 │  git add -p                 Stage hunks interactively           │
 │  git reset -p               Unstage hunks interactively         │
 │  git checkout -p            Discard hunks interactively         │
-│                                                                   │
-│  WORKTREES                                                       │
+│                                                                 │
+│  WORKTREES                                                      │
 │  git worktree list          List all worktrees                  │
-│  git worktree add <path> <branch>  Create worktree             │
+│  git worktree add <path> <branch>  Create worktree              │
 │  git worktree remove <path>  Remove worktree                    │
-│                                                                   │
-│  ADVANCED REBASE                                                 │
-│  git rebase --onto A B C    Rebase C's unique commits onto A   │
-│                                                                   │
-│  CLEANUP                                                         │
+│                                                                 │
+│  ADVANCED REBASE                                                │
+│  git rebase --onto A B C    Rebase C's unique commits onto A    │
+│                                                                 │
+│  CLEANUP                                                        │
 │  git clean -n               Dry run                             │
 │  git clean -fd              Remove untracked files/dirs         │
 │  git gc                     Garbage collection                  │
-│                                                                   │
-│  EXPORT                                                          │
-│  git archive HEAD > file.tar  Export without .git              │
-│  git bundle create f.bundle --all  Portable repo               │
-│                                                                   │
-│  NOTES                                                           │
+│                                                                 │
+│  EXPORT                                                         │
+│  git archive HEAD > file.tar  Export without .git               │
+│  git bundle create f.bundle --all  Portable repo                │
+│                                                                 │
+│  NOTES                                                          │
 │  git notes add -m "text"    Add metadata to commit              │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

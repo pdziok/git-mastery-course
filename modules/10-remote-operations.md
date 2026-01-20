@@ -14,10 +14,10 @@ After this module, you will:
 
 ```
 ┌────────────────────────────────────────────────────────────────────┐
-│                                                                      │
-│   YOUR COMPUTER                        THE CLOUD (GitHub/GitLab)    │
-│   ─────────────                        ──────────────────────       │
-│                                                                      │
+│                                                                    │
+│   YOUR COMPUTER                        THE CLOUD (GitHub/GitLab)   │
+│   ─────────────                        ──────────────────────      │
+│                                                                    │
 │   ┌───────────────────────┐           ┌───────────────────────┐    │
 │   │   Working Directory   │           │       origin          │    │
 │   │   (your files)        │           │    (remote repo)      │    │
@@ -34,7 +34,7 @@ After this module, you will:
 │   │   ├── main ───────────│      (updated by fetch/pull)           │
 │   │   └── feature         │                                        │
 │   └───────────────────────┘                                        │
-│                                                                      │
+│                                                                    │
 └────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -46,18 +46,18 @@ After this module, you will:
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
-│                                                                  │
-│   git fetch                          git pull                   │
-│   ──────────                         ────────                   │
-│                                                                  │
-│   1. Download new commits            1. Download new commits    │
-│   2. Update origin/main              2. Update origin/main      │
-│   3. STOP                            3. Merge into local main   │
-│                                         (or rebase if config'd)  │
-│                                                                  │
-│   Safe, just looks.                  May cause conflicts!       │
-│   "What's new?"                      "Get new AND apply it"     │
-│                                                                  │
+│                                                                │
+│   git fetch                          git pull                  │
+│   ──────────                         ────────                  │
+│                                                                │
+│   1. Download new commits            1. Download new commits   │
+│   2. Update origin/main              2. Update origin/main     │
+│   3. STOP                            3. Merge into local main  │
+│                                         (or rebase if config'd)│
+│                                                                │
+│   Safe, just looks.                  May cause conflicts!      │
+│   "What's new?"                      "Get new AND apply it"    │
+│                                                                │
 └────────────────────────────────────────────────────────────────┘
 
 git pull = git fetch + git merge  (by default)
@@ -388,31 +388,31 @@ git config --global pull.ff only
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    REMOTE COMMANDS                               │
+│                    REMOTE COMMANDS                              │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  SETUP                                                           │
+│                                                                 │
+│  SETUP                                                          │
 │  git remote add <name> <url>   Add a remote                     │
 │  git remote -v                 List remotes                     │
 │  git remote remove <name>      Remove a remote                  │
-│                                                                   │
-│  FETCH & PULL                                                    │
-│  git fetch                     Download all remotes              │
-│  git fetch origin              Download from origin              │
-│  git pull                      Fetch + merge                     │
+│                                                                 │
+│  FETCH & PULL                                                   │
+│  git fetch                     Download all remotes             │
+│  git fetch origin              Download from origin             │
+│  git pull                      Fetch + merge                    │
 │  git pull --rebase             Fetch + rebase (cleaner)         │
-│                                                                   │
-│  PUSH                                                            │
-│  git push                      Push current branch               │
+│                                                                 │
+│  PUSH                                                           │
+│  git push                      Push current branch              │
 │  git push -u origin <branch>   Push + set tracking              │
 │  git push --force-with-lease   Safe force push                  │
-│                                                                   │
-│  INSPECTION                                                      │
+│                                                                 │
+│  INSPECTION                                                     │
 │  git branch -vv                Show tracking info               │
 │  git remote show origin        Detailed remote info             │
 │  git log main..origin/main     What's on remote we don't have   │
 │  git log origin/main..main     What we have remote doesn't      │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

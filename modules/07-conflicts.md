@@ -87,13 +87,13 @@ main:        A ── B ── C ── D ← HEAD (you are here)
 feature:           E ── F ── G ← being merged in
 
 ┌─────────────────────────────────────────┐
-│ Working Directory contains:              │
-│                                          │
+│ Working Directory contains:             │
+│                                         │
 │ - Clean files (no conflict)             │
 │ - Conflicted files (with markers)       │
-│                                          │
-│ You are BETWEEN states:                  │
-│   Not D anymore, not merged yet          │
+│                                         │
+│ You are BETWEEN states:                 │
+│   Not D anymore, not merged yet         │
 └─────────────────────────────────────────┘
 
 AFTER RESOLUTION:
@@ -138,12 +138,12 @@ feature:           E ← "trying to apply this"
 
 ┌─────────────────────────────────────────┐
 │ You're REPLAYING commit E onto D.       │
-│                                          │
+│                                         │
 │ If E's changes conflict with D:         │
 │   → Fix the conflict                    │
 │   → git add <file>                      │
 │   → git rebase --continue               │
-│                                          │
+│                                         │
 │ Git will then try to apply F, then G.   │
 │ Each might also conflict!               │
 └─────────────────────────────────────────┘
@@ -384,68 +384,68 @@ git log --oneline --graph --all
 ### During Merge Conflict
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     MERGE CONFLICT STATE                         │
+│                     MERGE CONFLICT STATE                        │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  main ──────────────────┬─── HEAD (current)                      │
-│                          \                                        │
-│  feature ────────────────┴─── MERGE_HEAD (incoming)              │
-│                                                                   │
-│  Working Directory:                                               │
-│  ┌───────────────────────────────────────┐                       │
+│                                                                 │
+│  main ──────────────────┬─── HEAD (current)                     │
+│                          \                                      │
+│  feature ────────────────┴─── MERGE_HEAD (incoming)             │
+│                                                                 │
+│  Working Directory:                                             │
+│  ┌───────────────────────────────────────┐                      │
 │  │ file.txt (CONFLICTED)                 │                       │
 │  │ <<<<<<< HEAD                          │                       │
 │  │ your changes                          │                       │
 │  │ =======                               │                       │
 │  │ their changes                         │                       │
 │  │ >>>>>>> feature                       │                       │
-│  └───────────────────────────────────────┘                       │
-│                                                                   │
-│  Commands available:                                              │
-│    git merge --abort     Cancel everything                       │
-│    git checkout --ours   Keep your version                       │
-│    git checkout --theirs Keep their version                      │
-│    <edit manually>       Combine/choose                          │
-│    git add <file>        Mark as resolved                        │
-│    git commit            Complete merge                          │
-│                                                                   │
+│  └───────────────────────────────────────┘                      │
+│                                                                 │
+│  Commands available:                                            │
+│    git merge --abort     Cancel everything                      │
+│    git checkout --ours   Keep your version                      │
+│    git checkout --theirs Keep their version                     │
+│    <edit manually>       Combine/choose                         │
+│    git add <file>        Mark as resolved                       │
+│    git commit            Complete merge                         │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### During Rebase Conflict
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     REBASE CONFLICT STATE                        │
+│                     REBASE CONFLICT STATE                       │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  Rebasing: feature onto main                                     │
-│                                                                   │
-│  main:     A ── B ── C ── D                                      │
-│                            ↑                                      │
-│                    HEAD (detached here)                          │
-│                                                                   │
-│  Applying: E (commit 1 of 3)                                     │
-│  Waiting:  F, G (commits 2, 3)                                   │
-│                                                                   │
-│  Working Directory:                                               │
-│  ┌───────────────────────────────────────┐                       │
+│                                                                 │
+│  Rebasing: feature onto main                                    │
+│                                                                 │
+│  main:     A ── B ── C ── D                                     │
+│                            ↑                                    │
+│                    HEAD (detached here)                         │
+│                                                                 │
+│  Applying: E (commit 1 of 3)                                    │
+│  Waiting:  F, G (commits 2, 3)                                  │
+│                                                                 │
+│  Working Directory:                                             │
+│  ┌───────────────────────────────────────┐                      │
 │  │ file.txt (CONFLICTED)                 │                       │
 │  │ <<<<<<< HEAD                          │                       │
 │  │ content from D                        │                       │
 │  │ =======                               │                       │
 │  │ content from E                        │                       │
 │  │ >>>>>>> commit-being-applied          │                       │
-│  └───────────────────────────────────────┘                       │
-│                                                                   │
-│  Commands available:                                              │
+│  └───────────────────────────────────────┘                      │
+│                                                                 │
+│  Commands available:                                            │
 │    git rebase --abort     Cancel, go back to before rebase      │
 │    git rebase --skip      Skip this commit, continue with F     │
 │    git checkout --ours    Keep D's version (base)               │
 │    git checkout --theirs  Keep E's version (being applied)      │
-│    <edit manually>        Combine/choose                         │
-│    git add <file>         Mark as resolved                       │
+│    <edit manually>        Combine/choose                        │
+│    git add <file>         Mark as resolved                      │
 │    git rebase --continue  Apply this fix, continue to F         │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -571,29 +571,29 @@ git commit -m "Merge branch-b with auth conflict resolved"
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    CONFLICT RESOLUTION                           │
+│                    CONFLICT RESOLUTION                          │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  DURING MERGE                                                    │
-│  git merge --abort           Cancel merge                        │
+│                                                                 │
+│  DURING MERGE                                                   │
+│  git merge --abort           Cancel merge                       │
 │  git checkout --ours <file>  Keep your version                  │
 │  git checkout --theirs <file> Keep their version                │
-│  <edit file manually>        Combine/customize                   │
-│  git add <file>              Mark as resolved                    │
-│  git commit                  Complete merge                      │
-│                                                                   │
-│  DURING REBASE                                                   │
+│  <edit file manually>        Combine/customize                  │
+│  git add <file>              Mark as resolved                   │
+│  git commit                  Complete merge                     │
+│                                                                 │
+│  DURING REBASE                                                  │
 │  git rebase --abort          Cancel, return to before rebase    │
 │  git rebase --skip           Skip current commit                │
 │  git rebase --continue       Continue after resolving           │
 │  git checkout --ours <file>  Keep BASE version (confusing!)     │
 │  git checkout --theirs <file> Keep YOUR commit's version        │
-│                                                                   │
-│  INSPECTION                                                      │
-│  git status                  Shows conflict state clearly        │
-│  git diff                    Shows conflict markers              │
-│  git log --merge             Commits involved in conflict        │
-│                                                                   │
+│                                                                 │
+│  INSPECTION                                                     │
+│  git status                  Shows conflict state clearly       │
+│  git diff                    Shows conflict markers             │
+│  git log --merge             Commits involved in conflict       │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

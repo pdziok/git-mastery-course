@@ -446,27 +446,27 @@ docker exec -it git-workshop bash
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    CROSS-PLATFORM GIT                            │
+│                    CROSS-PLATFORM GIT                           │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  LINE ENDINGS                                                    │
+│                                                                 │
+│  LINE ENDINGS                                                   │
 │  Windows:  git config --global core.autocrlf true               │
 │  macOS:    git config --global core.autocrlf input              │
 │  Team:     Use .gitattributes file                              │
-│                                                                   │
-│  CASE SENSITIVITY                                                │
+│                                                                 │
+│  CASE SENSITIVITY                                               │
 │  git config --global core.ignorecase false                      │
 │  Rename:   git mv File.txt temp.txt && git mv temp.txt file.txt │
-│                                                                   │
-│  LONG PATHS (Windows)                                            │
+│                                                                 │
+│  LONG PATHS (Windows)                                           │
 │  git config --global core.longpaths true                        │
-│                                                                   │
-│  EXECUTABLES                                                     │
+│                                                                 │
+│  EXECUTABLES                                                    │
 │  git update-index --chmod=+x script.sh                          │
-│                                                                   │
-│  REFRESH AFTER .gitattributes                                    │
+│                                                                 │
+│  REFRESH AFTER .gitattributes                                   │
 │  git add --renormalize .                                        │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

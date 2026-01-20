@@ -435,32 +435,32 @@ fi
 ┌─────────────────────────────────────────────────────────────────┐
 │                    REPOSITORY CLEANING                          │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│  BEFORE CLEANING                                                 │
-│  1. Rotate any exposed credentials!                              │
-│  2. Backup: git clone --mirror                                   │
-│  3. Notify team                                                  │
-│                                                                  │
-│  FIND LARGE FILES                                                │
-│  git rev-list --objects --all | git cat-file ... | sort -rn    │
-│                                                                  │
-│  REMOVE FILES (git-filter-repo)                                  │
+│                                                                 │
+│  BEFORE CLEANING                                                │
+│  1. Rotate any exposed credentials!                             │
+│  2. Backup: git clone --mirror                                  │
+│  3. Notify team                                                 │
+│                                                                 │
+│  FIND LARGE FILES                                               │
+│  git rev-list --objects --all | git cat-file ... | sort -rn     │
+│                                                                 │
+│  REMOVE FILES (git-filter-repo)                                 │
 │  git filter-repo --path FILE --invert-paths                     │
 │  git filter-repo --strip-blobs-bigger-than 10M                  │
-│                                                                  │
-│  REMOVE SECRETS                                                  │
+│                                                                 │
+│  REMOVE SECRETS                                                 │
 │  git filter-repo --replace-text expressions.txt                 │
-│                                                                  │
-│  AFTER CLEANING                                                  │
+│                                                                 │
+│  AFTER CLEANING                                                 │
 │  git push origin --force --all                                  │
 │  git push origin --force --tags                                 │
 │  Team: fresh clone or git reset --hard origin/main              │
-│                                                                  │
-│  PREVENTION                                                      │
-│  - Git LFS for large files                                       │
-│  - Pre-commit hooks for secrets                                  │
+│                                                                 │
+│  PREVENTION                                                     │
+│  - Git LFS for large files                                      │
+│  - Pre-commit hooks for secrets                                 │
 │  - .gitignore for sensitive files                               │
-│                                                                  │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

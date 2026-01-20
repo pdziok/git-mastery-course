@@ -365,29 +365,29 @@ git log --oneline
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    BRANCH COMMANDS                               │
+│                    BRANCH COMMANDS                              │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  CREATE & SWITCH                                                 │
+│                                                                 │
+│  CREATE & SWITCH                                                │
 │  git branch <name>           Create branch (stay where you are) │
 │  git switch <name>           Switch to branch                   │
 │  git switch -c <name>        Create AND switch (preferred!)     │
 │  git checkout -b <name>      Old way of create + switch         │
-│                                                                   │
-│  LIST & INFO                                                     │
-│  git branch                  List local branches                 │
+│                                                                 │
+│  LIST & INFO                                                    │
+│  git branch                  List local branches                │
 │  git branch -a               List all (including remotes)       │
 │  git branch -vv              Verbose with tracking info         │
-│                                                                   │
-│  DELETE                                                          │
+│                                                                 │
+│  DELETE                                                         │
 │  git branch -d <name>        Delete (safe - must be merged)     │
 │  git branch -D <name>        Force delete                       │
-│                                                                   │
-│  REMOTE OPERATIONS                                               │
+│                                                                 │
+│  REMOTE OPERATIONS                                              │
 │  git push -u origin <name>   Push & set up tracking             │
-│  git fetch                   Download remote changes             │
-│  git pull                    Fetch + merge                       │
-│                                                                   │
+│  git fetch                   Download remote changes            │
+│  git pull                    Fetch + merge                      │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

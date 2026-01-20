@@ -418,28 +418,28 @@ git merge main
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    MERGE COMMANDS                                │
+│                    MERGE COMMANDS                               │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  BASIC MERGE                                                     │
-│  git merge <branch>          Merge branch into current           │
-│  git merge --no-ff <branch>  Force merge commit                  │
+│                                                                 │
+│  BASIC MERGE                                                    │
+│  git merge <branch>          Merge branch into current          │
+│  git merge --no-ff <branch>  Force merge commit                 │
 │  git merge --ff-only <branch> Fail if not fast-forward          │
 │  git merge --squash <branch> Squash into single commit          │
-│                                                                   │
-│  CONFLICT RESOLUTION                                             │
-│  git status                  See conflicted files                │
-│  git diff                    See conflict details                │
+│                                                                 │
+│  CONFLICT RESOLUTION                                            │
+│  git status                  See conflicted files               │
+│  git diff                    See conflict details               │
 │  git checkout --ours <file>  Keep our version                   │
 │  git checkout --theirs <file> Keep their version                │
 │  git add <file>              Mark as resolved                   │
-│  git commit                  Complete merge                      │
-│  git merge --abort           Cancel and go back                  │
-│                                                                   │
-│  USEFUL                                                          │
-│  git log --merge             Show commits causing conflict       │
+│  git commit                  Complete merge                     │
+│  git merge --abort           Cancel and go back                 │
+│                                                                 │
+│  USEFUL                                                         │
+│  git log --merge             Show commits causing conflict      │
 │  git diff --name-only --diff-filter=U  List conflicted files    │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

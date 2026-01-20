@@ -16,15 +16,15 @@ Git commands generally do one of these things:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                                                                   │
-│  INSPECT                MOVE DATA              MANIPULATE        │
-│  ───────                ─────────              ──────────        │
-│  status                 add                    commit             │
-│  diff                   restore               reset              │
-│  log                    switch/checkout       revert             │
-│  show                   stash                 rebase             │
-│  blame                  merge                 cherry-pick        │
-│                                                                   │
+│                                                                 │
+│  INSPECT                MOVE DATA              MANIPULATE       │
+│  ───────                ─────────              ──────────       │
+│  status                 add                    commit           │
+│  diff                   restore               reset             │
+│  log                    switch/checkout       revert            │
+│  show                   stash                 rebase            │
+│  blame                  merge                 cherry-pick       │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -38,14 +38,14 @@ Today we focus on **INSPECT** commands - understanding before acting.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     FILE LIFECYCLE                               │
+│                     FILE LIFECYCLE                              │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  ┌──────────┐    git add    ┌──────────┐    git commit           │
+│                                                                 │
+│  ┌──────────┐    git add    ┌──────────┐    git commit          │
 │  │UNTRACKED │──────────────>│ STAGED   │─────────────────┐       │
 │  │(new file)│               │          │                 │       │
 │  └──────────┘               └──────────┘                 │       │
-│       ▲                          ▲                       ▼       │
+│       ▲                          ▲                       ▼      │
 │       │                          │               ┌──────────┐    │
 │   create                     git add             │COMMITTED │    │
 │   new file                       │               │(unmodified)   │
@@ -53,9 +53,9 @@ Today we focus on **INSPECT** commands - understanding before acting.
 │       │                    ┌──────────┐                 │        │
 │       │                    │ MODIFIED │<────────────────┘        │
 │       │                    │          │    edit file             │
-│       └────────────────────┴──────────┘                          │
-│                               git rm                              │
-│                                                                   │
+│       └────────────────────┴──────────┘                         │
+│                               git rm                            │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -401,24 +401,24 @@ R  old.js -> new.js # Renamed
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    DAILY COMMANDS CHEAT SHEET                    │
+│                    DAILY COMMANDS CHEAT SHEET                   │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  STATUS & DIFF                                                   │
-│  git status              What's the current state?               │
-│  git status -s           Short format                            │
-│  git diff                Unstaged changes                        │
-│  git diff --staged       Staged changes (will be committed)      │
-│  git diff HEAD           All changes since last commit           │
-│                                                                   │
-│  HISTORY                                                          │
-│  git log --oneline       Compact history                         │
-│  git log --graph --all   Visual branch graph                     │
-│  git log -p              With diffs                              │
-│  git log -- <file>       History of one file                     │
-│  git show <commit>       Details of one commit                   │
-│  git blame <file>        Who wrote each line                     │
-│                                                                   │
+│                                                                 │
+│  STATUS & DIFF                                                  │
+│  git status              What's the current state?              │
+│  git status -s           Short format                           │
+│  git diff                Unstaged changes                       │
+│  git diff --staged       Staged changes (will be committed)     │
+│  git diff HEAD           All changes since last commit          │
+│                                                                 │
+│  HISTORY                                                        │
+│  git log --oneline       Compact history                        │
+│  git log --graph --all   Visual branch graph                    │
+│  git log -p              With diffs                             │
+│  git log -- <file>       History of one file                    │
+│  git show <commit>       Details of one commit                  │
+│  git blame <file>        Who wrote each line                    │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

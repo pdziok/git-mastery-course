@@ -17,25 +17,25 @@ Git has three configuration levels:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    CONFIGURATION HIERARCHY                       │
+│                    CONFIGURATION HIERARCHY                      │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  SYSTEM  (all users on the machine)                              │
+│                                                                 │
+│  SYSTEM  (all users on the machine)                             │
 │    Location: /etc/gitconfig (Unix) or Program Files (Windows)   │
-│    Set with: git config --system                                 │
-│                                                                   │
-│         ▼ (overridden by)                                        │
-│                                                                   │
-│  GLOBAL  (your user account)                                     │
+│    Set with: git config --system                                │
+│                                                                 │
+│         ▼ (overridden by)                                       │
+│                                                                 │
+│  GLOBAL  (your user account)                                    │
 │    Location: ~/.gitconfig  or  ~/.config/git/config             │
-│    Set with: git config --global                                 │
-│                                                                   │
-│         ▼ (overridden by)                                        │
-│                                                                   │
-│  LOCAL   (specific repository)                                   │
-│    Location: .git/config                                         │
+│    Set with: git config --global                                │
+│                                                                 │
+│         ▼ (overridden by)                                       │
+│                                                                 │
+│  LOCAL   (specific repository)                                  │
+│    Location: .git/config                                        │
 │    Set with: git config --local  (or just git config)           │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 
 Local overrides Global, Global overrides System.

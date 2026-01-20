@@ -398,33 +398,33 @@ git log v1.0..v2.0 --oneline        # Commit list
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    INVESTIGATION COMMANDS                        │
+│                    INVESTIGATION COMMANDS                       │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  LOG FILTERING                                                   │
+│                                                                 │
+│  LOG FILTERING                                                  │
 │  git log --author="Name"       By author                        │
 │  git log --grep="text"         By commit message                │
 │  git log -S "code"             When code was added/removed      │
 │  git log --since="date"        After date                       │
 │  git log -- path/file          Changes to specific file         │
-│                                                                   │
-│  BLAME                                                           │
+│                                                                 │
+│  BLAME                                                          │
 │  git blame file.js             Who last changed each line       │
-│  git blame -L 10,20 file.js    Specific line range             │
+│  git blame -L 10,20 file.js    Specific line range              │
 │  git blame -w file.js          Ignore whitespace                │
-│                                                                   │
-│  BISECT                                                          │
+│                                                                 │
+│  BISECT                                                         │
 │  git bisect start              Begin binary search              │
 │  git bisect bad                Current is broken                │
 │  git bisect good <commit>      This was working                 │
 │  git bisect reset              End and go back                  │
-│  git bisect run ./test.sh      Automate with script            │
-│                                                                   │
-│  COMPARISON                                                      │
+│  git bisect run ./test.sh      Automate with script             │
+│                                                                 │
+│  COMPARISON                                                     │
 │  git diff A..B                 Changes from A to B              │
 │  git diff A...B                Changes on B since common base   │
 │  git show <commit>             Details of one commit            │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

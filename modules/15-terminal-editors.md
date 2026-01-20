@@ -70,14 +70,14 @@ nano filename.txt
 ### The Nano Interface
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  GNU nano 5.4                    filename.txt                    │
+│  GNU nano 5.4                    filename.txt                   │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  This is the file content.                                       │
-│  You can type directly here.                                     │
-│  The cursor shows where you are.                                 │
-│                                                                   │
-│                                                                   │
+│                                                                 │
+│  This is the file content.                                      │
+│  You can type directly here.                                    │
+│  The cursor shows where you are.                                │
+│                                                                 │
+│                                                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │ ^G Help    ^O Write Out  ^W Where Is  ^K Cut       ^C Location  │
 │ ^X Exit    ^R Read File  ^\ Replace   ^U Paste     ^T Spelling  │
@@ -145,23 +145,23 @@ Vi/Vim is **modal** - it has different modes:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         VIM MODES                                │
+│                         VIM MODES                               │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
+│                                                                 │
 │  NORMAL MODE (default)          INSERT MODE                     │
-│  ─────────────────               ───────────                     │
-│  Navigation, commands           Typing text                      │
-│                                                                   │
+│  ─────────────────               ───────────                    │
+│  Navigation, commands           Typing text                     │
+│                                                                 │
 │  Press 'i' to enter ──────────────────────>                     │
-│                                                                   │
+│                                                                 │
 │  <─────────────────────────────────── Press 'Esc' to exit       │
-│                                                                   │
-│                                                                   │
-│  COMMAND MODE                                                    │
-│  ────────────                                                    │
-│  Save, quit, search                                              │
-│  Enter with ':' from Normal mode                                 │
-│                                                                   │
+│                                                                 │
+│                                                                 │
+│  COMMAND MODE                                                   │
+│  ────────────                                                   │
+│  Save, quit, search                                             │
+│  Enter with ':' from Normal mode                                │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -358,35 +358,35 @@ git log --oneline
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    VIM SURVIVAL GUIDE                            │
+│                    VIM SURVIVAL GUIDE                           │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  MOST IMPORTANT                                                  │
+│                                                                 │
+│  MOST IMPORTANT                                                 │
 │  Esc            Go to NORMAL mode (safe place)                  │
-│  i              Enter INSERT mode (start typing)                 │
-│  :wq Enter      Save and exit                                    │
-│  :q! Enter      Exit without saving                              │
-│                                                                   │
-│  NAVIGATION (in NORMAL mode)                                     │
+│  i              Enter INSERT mode (start typing)                │
+│  :wq Enter      Save and exit                                   │
+│  :q! Enter      Exit without saving                             │
+│                                                                 │
+│  NAVIGATION (in NORMAL mode)                                    │
 │  h j k l        Left, Down, Up, Right (or use arrow keys)       │
-│  gg             Go to top                                        │
-│  G              Go to bottom                                     │
-│  0              Go to start of line                              │
-│  $              Go to end of line                                │
-│                                                                   │
-│  EDITING (in NORMAL mode)                                        │
-│  i              Insert before cursor                             │
-│  a              Insert after cursor                              │
-│  o              New line below and insert                        │
-│  dd             Delete whole line                                │
-│  u              Undo                                             │
-│  Ctrl+r         Redo                                             │
-│                                                                   │
-│  FOR INTERACTIVE REBASE                                          │
-│  1. Use i to enter INSERT mode                                   │
+│  gg             Go to top                                       │
+│  G              Go to bottom                                    │
+│  0              Go to start of line                             │
+│  $              Go to end of line                               │
+│                                                                 │
+│  EDITING (in NORMAL mode)                                       │
+│  i              Insert before cursor                            │
+│  a              Insert after cursor                             │
+│  o              New line below and insert                       │
+│  dd             Delete whole line                               │
+│  u              Undo                                            │
+│  Ctrl+r         Redo                                            │
+│                                                                 │
+│  FOR INTERACTIVE REBASE                                         │
+│  1. Use i to enter INSERT mode                                  │
 │  2. Edit pick → squash/fixup/drop using arrow keys + typing     │
-│  3. Esc, :wq to save                                             │
-│                                                                   │
+│  3. Esc, :wq to save                                            │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -508,7 +508,7 @@ git rebase -i HEAD~2
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    NANO COMMANDS                                 │
+│                    NANO COMMANDS                                │
 ├─────────────────────────────────────────────────────────────────┤
 │  Ctrl+O Enter     Save                                          │
 │  Ctrl+X           Exit                                          │
@@ -518,11 +518,11 @@ git rebase -i HEAD~2
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│                    VIM COMMANDS                                  │
+│                    VIM COMMANDS                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │  Esc              Go to NORMAL mode                             │
-│  i                Enter INSERT mode                              │
-│  :wq Enter        Save and quit                                  │
+│  i                Enter INSERT mode                             │
+│  :wq Enter        Save and quit                                 │
 │  :q! Enter        Quit without saving                           │
 │  dd               Delete line                                   │
 │  u                Undo                                          │

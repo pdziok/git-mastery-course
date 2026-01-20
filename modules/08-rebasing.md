@@ -444,29 +444,29 @@ git rebase --abort
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    REBASE COMMANDS                               │
+│                    REBASE COMMANDS                              │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  BASIC REBASE                                                    │
-│  git rebase main             Rebase current onto main            │
-│  git rebase -i HEAD~N        Interactive rebase last N commits   │
-│  git rebase -i main          Interactive rebase since main       │
-│                                                                   │
-│  DURING REBASE (conflicts)                                       │
-│  git status                  See what needs resolving            │
-│  git add <file>              Mark conflict as resolved           │
-│  git rebase --continue       Continue after resolving            │
-│  git rebase --skip           Skip current commit                 │
-│  git rebase --abort          Cancel entire rebase                │
-│                                                                   │
-│  INTERACTIVE COMMANDS                                            │
-│  pick (p)    Keep commit                                         │
-│  reword (r)  Keep commit, edit message                           │
-│  squash (s)  Meld into previous, combine messages                │
-│  fixup (f)   Meld into previous, discard message                 │
-│  drop (d)    Remove commit                                       │
-│  edit (e)    Stop for amending                                   │
-│                                                                   │
+│                                                                 │
+│  BASIC REBASE                                                   │
+│  git rebase main             Rebase current onto main           │
+│  git rebase -i HEAD~N        Interactive rebase last N commits  │
+│  git rebase -i main          Interactive rebase since main      │
+│                                                                 │
+│  DURING REBASE (conflicts)                                      │
+│  git status                  See what needs resolving           │
+│  git add <file>              Mark conflict as resolved          │
+│  git rebase --continue       Continue after resolving           │
+│  git rebase --skip           Skip current commit                │
+│  git rebase --abort          Cancel entire rebase               │
+│                                                                 │
+│  INTERACTIVE COMMANDS                                           │
+│  pick (p)    Keep commit                                        │
+│  reword (r)  Keep commit, edit message                          │
+│  squash (s)  Meld into previous, combine messages               │
+│  fixup (f)   Meld into previous, discard message                │
+│  drop (d)    Remove commit                                      │
+│  edit (e)    Stop for amending                                  │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

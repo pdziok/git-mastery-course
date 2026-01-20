@@ -15,9 +15,9 @@ Imagine you're a professional photographer creating a wedding album:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                     YOUR PHOTOGRAPHY STUDIO                          │
+│                     YOUR PHOTOGRAPHY STUDIO                         │
 ├─────────────────────────────────────────────────────────────────────┤
-│                                                                       │
+│                                                                     │
 │  ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐  │
 │  │                 │    │                 │    │                 │  │
 │  │   SHOOTING      │───>│   SELECTION     │───>│   THE ALBUM     │  │
@@ -28,9 +28,9 @@ Imagine you're a professional photographer creating a wedding album:
 │  │  delete bad ones│    │   the album"    │    │  and dates      │  │
 │  │                 │    │                 │    │                 │  │
 │  └─────────────────┘    └─────────────────┘    └─────────────────┘  │
-│   Working Directory         Staging Area           Repository        │
-│                               (Index)               (.git folder)    │
-│                                                                       │
+│   Working Directory         Staging Area           Repository       │
+│                               (Index)               (.git folder)   │
+│                                                                     │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -74,9 +74,9 @@ A commit is NOT just "saving changes". A commit is:
 │ Message: "Add login button"             │
 │                                         │
 │ Snapshot:                               │
-│   - index.html (version xyz...)        │
-│   - style.css  (version abc...)        │
-│   - app.js     (version 123...)        │
+│   - index.html (version xyz...)         │
+│   - style.css  (version abc...)         │
+│   - app.js     (version 123...)         │
 └─────────────────────────────────────────┘
 ```
 
