@@ -1,0 +1,29 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-*
+
+# Test/exercise directories (users create these locally)
+sandbox/
+playground/
+advanced-test/
+onto-test/
+cleaning-test/
+secrets-test/
+
+# Docker volumes
+docker/workshop-exercises/
+
+# Misc
+*.log
+*.tmp
