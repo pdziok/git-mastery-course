@@ -14,8 +14,8 @@
 
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/git-workshop.git
-cd git-workshop
+git clone https://github.com/pdziok/git-mastery-course.git
+cd git-mastery-course
 
 # Create your exercise directory (used throughout the course)
 mkdir -p ~/git-workshop
