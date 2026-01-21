@@ -19,24 +19,24 @@ Think of Git as a special library with an unusual cataloging system:
 │                         THE GIT LIBRARY                             │
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                     │
-│  STORAGE ROOM (objects/)          │  CARD CATALOG (refs/)            │
-│  ─────────────────────────        │  ─────────────────────           │
-│                                    │                                  │
-│  ┌───────────┐                    │  ┌───────────────────┐           │
-│  │   BLOB    │ ← Page of text     │  │ main → abc123     │ Bookmark  │
-│  │  (file)   │   (no filename!)   │  │ feature → def456  │ pointing  │
-│  └───────────┘                    │  │ bugfix → 789ghi   │ to a card │
-│                                    │  └───────────────────┘           │
-│  ┌───────────┐                    │                                  │
-│  │   TREE    │ ← Directory list   │  ┌───────────────────┐           │
-│  │  (folder) │   "xyz is hello.txt"│  │ HEAD → refs/heads/│ Sticky   │
-│  └───────────┘                    │  │        main       │ note:     │
-│                                    │  └───────────────────┘ "You're  │
-│  ┌───────────┐                    │                        reading   │
-│  │  COMMIT   │ ← Library card     │                        THIS      │
-│  │           │   (metadata+tree)  │                        bookmark" │
-│  └───────────┘                    │                                  │
-│                                    │                                  │
+│  STORAGE ROOM (objects/)        │  CARD CATALOG (refs/)             │
+│  ─────────────────────────      │  ─────────────────────            │
+│                                 │                                   │
+│  ┌───────────┐                  │  ┌───────────────────┐            │
+│  │   BLOB    │ ← Page of text   │  │ main → abc123     │ Bookmark   │
+│  │  (file)   │   (no filename!) │  │ feature → def456  │ pointing   │
+│  └───────────┘                  │  │ bugfix → 789ghi   │ to a card  │
+│                                 │  └───────────────────┘            │
+│  ┌───────────┐                  │                                   │
+│  │   TREE    │ ← Directory list │  ┌───────────────────┐            │
+│  │  (folder) │   "xyz is file"  │  │ HEAD → refs/heads/│ Sticky     │
+│  └───────────┘                  │  │        main       │ note:      │
+│                                 │  └───────────────────┘ "You're    │
+│  ┌───────────┐                  │                        reading    │
+│  │  COMMIT   │ ← Library card   │                        THIS       │
+│  │           │   (metadata+tree)│                        bookmark"  │
+│  └───────────┘                  │                                   │
+│                                 │                                   │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 

@@ -42,17 +42,17 @@ Today we focus on **INSPECT** commands - understanding before acting.
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │  ┌──────────┐    git add    ┌──────────┐    git commit          │
-│  │UNTRACKED │──────────────>│ STAGED   │─────────────────┐       │
-│  │(new file)│               │          │                 │       │
-│  └──────────┘               └──────────┘                 │       │
+│  │UNTRACKED │──────────────>│ STAGED   │─────────────────┐      │
+│  │(new file)│               │          │                 │      │
+│  └──────────┘               └──────────┘                 │      │
 │       ▲                          ▲                       ▼      │
-│       │                          │               ┌──────────┐    │
-│   create                     git add             │COMMITTED │    │
-│   new file                       │               │(unmodified)   │
-│       │                          │               └──────────┘    │
-│       │                    ┌──────────┐                 │        │
-│       │                    │ MODIFIED │<────────────────┘        │
-│       │                    │          │    edit file             │
+│       │                          │               ┌──────────┐   │
+│   create                     git add             │COMMITTED │   │
+│   new file                       │               │(unmodified)  │
+│       │                          │               └──────────┘   │
+│       │                    ┌──────────┐                 │       │
+│       │                    │ MODIFIED │<────────────────┘       │
+│       │                    │          │    edit file            │
 │       └────────────────────┴──────────┘                         │
 │                               git rm                            │
 │                                                                 │

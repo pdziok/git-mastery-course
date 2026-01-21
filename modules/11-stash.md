@@ -29,7 +29,7 @@ Imagine you're working at a desk with papers everywhere. Your boss walks in and 
 │          ▼                   <───────────                       │
 │   ┌─────────────┐                                               │
 │   │ MAGIC       │  You can have multiple drawers!               │
-│   │ DRAWER      │  stash@{0}, stash@{1}, stash@{2}...          │
+│   │ DRAWER      │  stash@{0}, stash@{1}, stash@{2}...           │
 │   │ (invisible) │                                               │
 │   └─────────────┘                                               │
 │                                                                 │

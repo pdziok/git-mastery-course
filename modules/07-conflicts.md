@@ -393,12 +393,12 @@ git log --oneline --graph --all
 │                                                                 │
 │  Working Directory:                                             │
 │  ┌───────────────────────────────────────┐                      │
-│  │ file.txt (CONFLICTED)                 │                       │
-│  │ <<<<<<< HEAD                          │                       │
-│  │ your changes                          │                       │
-│  │ =======                               │                       │
-│  │ their changes                         │                       │
-│  │ >>>>>>> feature                       │                       │
+│  │ file.txt (CONFLICTED)                 │                      │
+│  │ <<<<<<< HEAD                          │                      │
+│  │ your changes                          │                      │
+│  │ =======                               │                      │
+│  │ their changes                         │                      │
+│  │ >>>>>>> feature                       │                      │
 │  └───────────────────────────────────────┘                      │
 │                                                                 │
 │  Commands available:                                            │
@@ -429,12 +429,12 @@ git log --oneline --graph --all
 │                                                                 │
 │  Working Directory:                                             │
 │  ┌───────────────────────────────────────┐                      │
-│  │ file.txt (CONFLICTED)                 │                       │
-│  │ <<<<<<< HEAD                          │                       │
-│  │ content from D                        │                       │
-│  │ =======                               │                       │
-│  │ content from E                        │                       │
-│  │ >>>>>>> commit-being-applied          │                       │
+│  │ file.txt (CONFLICTED)                 │                      │
+│  │ <<<<<<< HEAD                          │                      │
+│  │ content from D                        │                      │
+│  │ =======                               │                      │
+│  │ content from E                        │                      │
+│  │ >>>>>>> commit-being-applied          │                      │
 │  └───────────────────────────────────────┘                      │
 │                                                                 │
 │  Commands available:                                            │

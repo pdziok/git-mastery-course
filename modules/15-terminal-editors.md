@@ -23,11 +23,11 @@ Sometimes you MUST use a terminal editor:
 
 ```
 Your IDE                     SSH to production server
-┌──────────────┐            ┌──────────────────────────────┐
-│  VS Code     │ ──────────>│ $ vim commit_message.txt    │
-│  IntelliJ    │   No GUI!  │                              │
-│  etc.        │            │ You need terminal skills!    │
-└──────────────┘            └──────────────────────────────┘
+┌──────────────┐            ┌───────────────────────────────┐
+│  VS Code     │ ──────────>│ $ vim commit_message.txt      │
+│  IntelliJ    │   No GUI!  │                               │
+│  etc.        │            │ You need terminal skills!     │
+└──────────────┘            └───────────────────────────────┘
 ```
 
 ---

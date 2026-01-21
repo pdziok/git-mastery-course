@@ -21,7 +21,7 @@ Imagine you're a professional photographer creating a wedding album:
 │  ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐  │
 │  │                 │    │                 │    │                 │  │
 │  │   SHOOTING      │───>│   SELECTION     │───>│   THE ALBUM     │  │
-│  │   AREA          │add │   TABLE         │commit│  (Permanent)   │  │
+│  │   AREA          │add │   TABLE         │commit│ (Permanent)   │  │
 │  │                 │    │                 │    │                 │  │
 │  │  Take photos,   │    │  "These photos  │    │  Glued pages,   │  │
 │  │  experiment,    │    │   will go in    │    │  with captions  │  │
